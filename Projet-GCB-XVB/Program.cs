@@ -16,7 +16,7 @@ namespace Projet_GCB_XVB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormM1());
         }
     }
 }
