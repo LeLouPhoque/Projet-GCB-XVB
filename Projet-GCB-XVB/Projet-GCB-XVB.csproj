@@ -147,9 +147,6 @@
     <EmbeddedResource Include="FormM1.resx">
       <DependentUpon>FormM1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormM2.resx">
-      <DependentUpon>FormM2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
