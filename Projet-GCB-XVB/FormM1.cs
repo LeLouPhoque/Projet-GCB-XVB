@@ -16,5 +16,10 @@ namespace Projet_GCB_XVB
         {
             InitializeComponent();
         }
+
+        private void FormM1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
