@@ -144,6 +144,15 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormM1.resx">
+      <DependentUpon>FormM1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormM2.resx">
+      <DependentUpon>FormM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
