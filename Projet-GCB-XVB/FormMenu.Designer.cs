@@ -28,67 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menu1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.btnMission1 = new System.Windows.Forms.Button();
+            this.btnMission2 = new System.Windows.Forms.Button();
+            this.btnMission3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // btnMission1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menu1ToolStripMenuItem,
-            this.menu2ToolStripMenuItem,
-            this.menu3ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.btnMission1.Location = new System.Drawing.Point(75, 165);
+            this.btnMission1.Name = "btnMission1";
+            this.btnMission1.Size = new System.Drawing.Size(186, 105);
+            this.btnMission1.TabIndex = 1;
+            this.btnMission1.Text = "Mission 1";
+            this.btnMission1.UseVisualStyleBackColor = true;
+            this.btnMission1.Click += new System.EventHandler(this.btnMission1_Click);
             // 
-            // menu1ToolStripMenuItem
+            // btnMission2
             // 
-            this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
-            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.menu1ToolStripMenuItem.Text = "Menu1";
-            this.menu1ToolStripMenuItem.Click += new System.EventHandler(this.menu1ToolStripMenuItem_Click);
+            this.btnMission2.Location = new System.Drawing.Point(305, 165);
+            this.btnMission2.Name = "btnMission2";
+            this.btnMission2.Size = new System.Drawing.Size(186, 105);
+            this.btnMission2.TabIndex = 2;
+            this.btnMission2.Text = "Mission 2";
+            this.btnMission2.UseVisualStyleBackColor = true;
+            this.btnMission2.Click += new System.EventHandler(this.btnMission2_Click);
             // 
-            // menu2ToolStripMenuItem
+            // btnMission3
             // 
-            this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
-            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.menu2ToolStripMenuItem.Text = "Menu2";
-            this.menu2ToolStripMenuItem.Click += new System.EventHandler(this.menu2ToolStripMenuItem_Click);
-            // 
-            // menu3ToolStripMenuItem
-            // 
-            this.menu3ToolStripMenuItem.Name = "menu3ToolStripMenuItem";
-            this.menu3ToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.menu3ToolStripMenuItem.Text = "Menu3";
-            this.menu3ToolStripMenuItem.Click += new System.EventHandler(this.menu3ToolStripMenuItem_Click);
+            this.btnMission3.Location = new System.Drawing.Point(526, 165);
+            this.btnMission3.Name = "btnMission3";
+            this.btnMission3.Size = new System.Drawing.Size(186, 105);
+            this.btnMission3.TabIndex = 3;
+            this.btnMission3.Text = "Mission 3";
+            this.btnMission3.UseVisualStyleBackColor = true;
+            this.btnMission3.Click += new System.EventHandler(this.btnMission3_Click);
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.btnMission3);
+            this.Controls.Add(this.btnMission2);
+            this.Controls.Add(this.btnMission1);
             this.Name = "FormMenu";
             this.Text = "FormMENU";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem menu1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem menu2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem menu3ToolStripMenuItem;
+        private System.Windows.Forms.Button btnMission1;
+        private System.Windows.Forms.Button btnMission2;
+        private System.Windows.Forms.Button btnMission3;
     }
 }

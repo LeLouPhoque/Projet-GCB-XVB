@@ -17,21 +17,26 @@ namespace Projet_GCB_XVB
             InitializeComponent();
         }
 
-        private void menu1ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMission1_Click(object sender, EventArgs e)
         {
             FormM1 form1 = new FormM1();
             form1.Show();
         }
 
-        private void menu3ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnMission2_Click(object sender, EventArgs e)
         {
-            FormM3 form1 = new FormM3();
+            FormM2 form1 = new FormM2();
             form1.Show();
         }
 
-        private void menu2ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnMission3_Click(object sender, EventArgs e)
         {
-            FormM2 form1 = new FormM2();
+            FormM3 form1 = new FormM3();
             form1.Show();
         }
     }

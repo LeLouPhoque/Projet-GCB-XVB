@@ -480,7 +480,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="GSB_XVBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="connectXVBarCorporate" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Etat">
           <Key>
             <PropertyRef Name="id" />
@@ -867,7 +867,7 @@
           <End Role="Region" Type="Self.Region" Multiplicity="*" />
           <End Role="Visiteur" Type="Self.Visiteur" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="GSB_XVBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="connectXVB" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Etat" EntityType="Self.Etat" />
           <EntitySet Name="FAMILLE" EntityType="Self.FAMILLE" />
           <EntitySet Name="fichefrais" EntityType="Self.fichefrais" />
@@ -958,9 +958,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="GSB_XVBModelStoreContainer" CdmEntityContainer="GSB_XVBEntities">
+        <EntityContainerMapping StorageEntityContainer="GSB_XVBModelStoreContainer" CdmEntityContainer="connectXVB">
           <EntitySetMapping Name="Etat">
-            <EntityTypeMapping TypeName="GSB_XVBModel.Etat">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.Etat">
               <MappingFragment StoreEntitySet="Etat">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="libelle" ColumnName="libelle" />
@@ -968,7 +968,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FAMILLE">
-            <EntityTypeMapping TypeName="GSB_XVBModel.FAMILLE">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.FAMILLE">
               <MappingFragment StoreEntitySet="FAMILLE">
                 <ScalarProperty Name="idFamille" ColumnName="idFamille" />
                 <ScalarProperty Name="libFamille" ColumnName="libFamille" />
@@ -976,7 +976,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fichefrais">
-            <EntityTypeMapping TypeName="GSB_XVBModel.fichefrais">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.fichefrais">
               <MappingFragment StoreEntitySet="fichefrais">
                 <ScalarProperty Name="idVisiteur" ColumnName="idVisiteur" />
                 <ScalarProperty Name="mois" ColumnName="mois" />
@@ -988,7 +988,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FraisForfait">
-            <EntityTypeMapping TypeName="GSB_XVBModel.FraisForfait">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.FraisForfait">
               <MappingFragment StoreEntitySet="FraisForfait">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="libelle" ColumnName="libelle" />
@@ -997,7 +997,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Laboratoire">
-            <EntityTypeMapping TypeName="GSB_XVBModel.Laboratoire">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.Laboratoire">
               <MappingFragment StoreEntitySet="Laboratoire">
                 <ScalarProperty Name="idLabo" ColumnName="idLabo" />
                 <ScalarProperty Name="nomLabo" ColumnName="nomLabo" />
@@ -1005,7 +1005,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="LigneFraisForfait">
-            <EntityTypeMapping TypeName="GSB_XVBModel.LigneFraisForfait">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.LigneFraisForfait">
               <MappingFragment StoreEntitySet="LigneFraisForfait">
                 <ScalarProperty Name="idVisiteur" ColumnName="idVisiteur" />
                 <ScalarProperty Name="mois" ColumnName="mois" />
@@ -1015,7 +1015,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="LigneFraisHorsForfait">
-            <EntityTypeMapping TypeName="GSB_XVBModel.LigneFraisHorsForfait">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.LigneFraisHorsForfait">
               <MappingFragment StoreEntitySet="LigneFraisHorsForfait">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idVisiteur" ColumnName="idVisiteur" />
@@ -1027,7 +1027,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MEDECIN">
-            <EntityTypeMapping TypeName="GSB_XVBModel.MEDECIN">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.MEDECIN">
               <MappingFragment StoreEntitySet="MEDECIN">
                 <ScalarProperty Name="idMedecin" ColumnName="idMedecin" />
                 <ScalarProperty Name="nom" ColumnName="nom" />
@@ -1040,7 +1040,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MEDICAMENT">
-            <EntityTypeMapping TypeName="GSB_XVBModel.MEDICAMENT">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.MEDICAMENT">
               <MappingFragment StoreEntitySet="MEDICAMENT">
                 <ScalarProperty Name="idMedicament" ColumnName="idMedicament" />
                 <ScalarProperty Name="nomCommercial" ColumnName="nomCommercial" />
@@ -1052,7 +1052,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MOTIF">
-            <EntityTypeMapping TypeName="GSB_XVBModel.MOTIF">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.MOTIF">
               <MappingFragment StoreEntitySet="MOTIF">
                 <ScalarProperty Name="idMotif" ColumnName="idMotif" />
                 <ScalarProperty Name="libMotif" ColumnName="libMotif" />
@@ -1060,7 +1060,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="OFFRIR">
-            <EntityTypeMapping TypeName="GSB_XVBModel.OFFRIR">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.OFFRIR">
               <MappingFragment StoreEntitySet="OFFRIR">
                 <ScalarProperty Name="idRapport" ColumnName="idRapport" />
                 <ScalarProperty Name="idMedicament" ColumnName="idMedicament" />
@@ -1069,7 +1069,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="RAPPORT">
-            <EntityTypeMapping TypeName="GSB_XVBModel.RAPPORT">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.RAPPORT">
               <MappingFragment StoreEntitySet="RAPPORT">
                 <ScalarProperty Name="idRapport" ColumnName="idRapport" />
                 <ScalarProperty Name="dateRapport" ColumnName="dateRapport" />
@@ -1081,7 +1081,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Region">
-            <EntityTypeMapping TypeName="GSB_XVBModel.Region">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.Region">
               <MappingFragment StoreEntitySet="Region">
                 <ScalarProperty Name="idRegion" ColumnName="idRegion" />
                 <ScalarProperty Name="libRegion" ColumnName="libRegion" />
@@ -1091,7 +1091,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Secteur">
-            <EntityTypeMapping TypeName="GSB_XVBModel.Secteur">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.Secteur">
               <MappingFragment StoreEntitySet="Secteur">
                 <ScalarProperty Name="idSecteur" ColumnName="idSecteur" />
                 <ScalarProperty Name="libSecteur" ColumnName="libSecteur" />
@@ -1100,7 +1100,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SPECIALITE">
-            <EntityTypeMapping TypeName="GSB_XVBModel.SPECIALITE">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.SPECIALITE">
               <MappingFragment StoreEntitySet="SPECIALITE">
                 <ScalarProperty Name="idSpecialite" ColumnName="idSpecialite" />
                 <ScalarProperty Name="libSpecialite" ColumnName="libSpecialite" />
@@ -1108,7 +1108,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Visiteur">
-            <EntityTypeMapping TypeName="GSB_XVBModel.Visiteur">
+            <EntityTypeMapping TypeName="connectXVBarCorporate.Visiteur">
               <MappingFragment StoreEntitySet="Visiteur">
                 <ScalarProperty Name="idVisiteur" ColumnName="idVisiteur" />
                 <ScalarProperty Name="idLabo" ColumnName="idLabo" />
@@ -1123,7 +1123,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <AssociationSetMapping Name="Travailler" TypeName="GSB_XVBModel.Travailler" StoreEntitySet="Travailler">
+          <AssociationSetMapping Name="Travailler" TypeName="connectXVBarCorporate.Travailler" StoreEntitySet="Travailler">
             <EndProperty Name="Region">
               <ScalarProperty Name="idRegion" ColumnName="idRegion" />
             </EndProperty>

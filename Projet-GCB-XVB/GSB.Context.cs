@@ -13,10 +13,10 @@ namespace Projet_GCB_XVB
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class GSB_XVBEntities : DbContext
+    public partial class connectXVB : DbContext
     {
-        public GSB_XVBEntities()
-            : base("name=GSB_XVBEntities")
+        public connectXVB()
+            : base("name=connectXVB")
         {
         }
     
