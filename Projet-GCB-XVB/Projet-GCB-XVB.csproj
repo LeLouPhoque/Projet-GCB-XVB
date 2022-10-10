@@ -64,6 +64,30 @@
     <Compile Include="fichefrais.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
+    <Compile Include="FormM2-Medecins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormM2-Medecins.Designer.cs">
+      <DependentUpon>FormM2-Medecins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormM2-medic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormM2-medic.Designer.cs">
+      <DependentUpon>FormM2-medic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormM2-Rapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormM2-Rapport.Designer.cs">
+      <DependentUpon>FormM2-Rapport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormM2-Visiteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormM2-Visiteur.Designer.cs">
+      <DependentUpon>FormM2-Visiteur.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormM2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +170,9 @@
     </Compile>
     <EmbeddedResource Include="FormM1.resx">
       <DependentUpon>FormM1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormM2.resx">
+      <DependentUpon>FormM2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
