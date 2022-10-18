@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion.Designer.cs">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Date.Designer.cs">
+      <DependentUpon>Date.cs</DependentUpon>
+    </Compile>
     <Compile Include="Etat.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
@@ -112,6 +124,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GSB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="GSB_XVBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSB_XVBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Laboratoire.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
@@ -127,6 +144,7 @@
     <Compile Include="MEDICAMENT.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Modele.cs" />
     <Compile Include="MOTIF.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
@@ -150,11 +168,17 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Date.resx">
+      <DependentUpon>Date.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormM1.resx">
       <DependentUpon>FormM1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormM2.resx">
-      <DependentUpon>FormM2.cs</DependentUpon>
+    <EmbeddedResource Include="FormM3.resx">
+      <DependentUpon>FormM3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
@@ -174,6 +198,17 @@
     </EntityDeploy>
     <None Include="GSB.edmx.diagram">
       <DependentUpon>GSB.edmx</DependentUpon>
+    </None>
+    <None Include="GSB_XVBDataSet.xsc">
+      <DependentUpon>GSB_XVBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GSB_XVBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSB_XVBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GSB_XVBDataSet.xss">
+      <DependentUpon>GSB_XVBDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
