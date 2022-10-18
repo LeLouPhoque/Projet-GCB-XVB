@@ -25,7 +25,7 @@ namespace Projet_GCB_XVB
 
         private void btnValider_Click(object sender, EventArgs e)
         {
-            lblIdVous.Text=Modele.validConnexion(txtBoxUserName.Text, txtBoxMdp.Text);
+            lblError.Text=Modele.validConnexion(txtBoxUserName.Text, txtBoxMdp.Text);
             if (Modele.connexionValide)
             {
                 System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
@@ -42,6 +42,12 @@ namespace Projet_GCB_XVB
         private void Connexion_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            txtBoxUserName.Clear();
+            txtBoxMdp.Clear();
         }
     }
 }

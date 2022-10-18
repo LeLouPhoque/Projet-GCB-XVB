@@ -37,6 +37,8 @@
             this.btnValider = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.epMdp = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblError = new System.Windows.Forms.Label();
+            this.btnAnnuler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.epMdp)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +92,7 @@
             // 
             // btnValider
             // 
-            this.btnValider.Location = new System.Drawing.Point(232, 217);
+            this.btnValider.Location = new System.Drawing.Point(292, 203);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(75, 23);
             this.btnValider.TabIndex = 5;
@@ -112,11 +114,32 @@
             // 
             this.epMdp.ContainerControl = this;
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(202, 189);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 7;
+            // 
+            // btnAnnuler
+            // 
+            this.btnAnnuler.Location = new System.Drawing.Point(205, 203);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnuler.TabIndex = 8;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
+            // 
             // Connexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 324);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.txtBoxMdp);
@@ -143,5 +166,7 @@
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ErrorProvider epMdp;
+        private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Button btnAnnuler;
     }
 }

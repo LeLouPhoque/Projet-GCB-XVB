@@ -25,7 +25,7 @@ namespace Projet_GCB_XVB
             connexionValide = false;
                 foreach (Visiteur leVisiteur in maConnexion.Visiteur)
                 {
-                    while (!connexionValide)
+                    if (!connexionValide)
                     {
                         if (id == leVisiteur.identifiant)
                         {
@@ -34,6 +34,7 @@ namespace Projet_GCB_XVB
                                 connexionValide = true;
                             }
                         }
+                    message = "Identifiant ou mot de passe incorect";
                     }
                 }
             return message;

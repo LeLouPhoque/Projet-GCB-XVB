@@ -14,6 +14,7 @@ namespace Projet_GCB_XVB
         [STAThread]
         static void Main()
         {
+            Modele.init();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Connexion());
