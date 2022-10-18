@@ -36,7 +36,21 @@ namespace Projet_GCB_XVB
 
         private void btnMission3_Click(object sender, EventArgs e)
         {
-            FormM3 form1 = new FormM3();
+            Date form1 = new Date();
+            form1.Show();
+        }
+
+
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Connexion form1 = new Connexion();
+            form1.Show();
+        }
+
+        private void btnNotExist_Click(object sender, EventArgs e)
+        {
+            Connexion form1 = new Connexion();
             form1.Show();
         }
     }
