@@ -76,6 +76,18 @@
     <Compile Include="fichefrais.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
+	<Compile Include="FormM2-Rapport.Designer.cs">
+		<SubType>Form</SubType>
+	</Compile>
+	<Compile Include="FInformationNominative.Designer.cs">
+      <DependentUpon>FInformationNominative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FModifieIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FModifieIN.Designer.cs">
+      <DependentUpon>FModifieIN.cs</DependentUpon>
+	</Compile>
     <Compile Include="FormM2-Rapport.cs">
       <SubType>Form</SubType>
     </Compile>

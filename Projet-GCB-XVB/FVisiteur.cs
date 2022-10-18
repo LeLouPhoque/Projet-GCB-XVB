@@ -26,7 +26,6 @@ namespace Projet_GCB_XVB
         private void mettreÀJourToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FInformationNominative IN= new FInformationNominative();
-            new FInformationNominative().Show();
 
         }
 
