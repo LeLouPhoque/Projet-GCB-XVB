@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.rapport = new System.Windows.Forms.ToolStripMenuItem();
-            this.visiteur = new System.Windows.Forms.ToolStripMenuItem();
-            this.medicament = new System.Windows.Forms.ToolStripMenuItem();
-            this.medecin = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.allRapport = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.SuspendLayout();
             // 
             // label1
@@ -47,59 +46,66 @@
             this.label1.Text = "Esteban Rautureau";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // menuStrip1
+            // allRapport
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rapport,
-            this.visiteur,
-            this.medicament,
-            this.medecin});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.allRapport.AutoSize = true;
+            this.allRapport.Location = new System.Drawing.Point(159, 143);
+            this.allRapport.Name = "allRapport";
+            this.allRapport.Size = new System.Drawing.Size(110, 17);
+            this.allRapport.TabIndex = 1;
+            this.allRapport.Text = "Tous les rapports ";
+            this.allRapport.UseVisualStyleBackColor = true;
             // 
-            // rapport
+            // checkBox2
             // 
-            this.rapport.Name = "rapport";
-            this.rapport.Size = new System.Drawing.Size(133, 20);
-            this.rapport.Text = "L’activité des visiteurs";
-            this.rapport.Click += new System.EventHandler(this.medecinToolStripMenuItem_Click);
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(159, 185);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(80, 17);
+            this.checkBox2.TabIndex = 2;
+            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // visiteur
+            // checkBox3
             // 
-            this.visiteur.Name = "visiteur";
-            this.visiteur.Size = new System.Drawing.Size(138, 20);
-            this.visiteur.Text = "Les Visiteurs Médicaux";
-            this.visiteur.Click += new System.EventHandler(this.visiteurToolStripMenuItem_Click);
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(159, 232);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(80, 17);
+            this.checkBox3.TabIndex = 3;
+            this.checkBox3.Text = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // medicament
+            // checkBox4
             // 
-            this.medicament.Name = "medicament";
-            this.medicament.Size = new System.Drawing.Size(111, 20);
-            this.medicament.Text = "Les médicaments";
-            this.medicament.Click += new System.EventHandler(this.medicament_Click);
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(159, 266);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(80, 17);
+            this.checkBox4.TabIndex = 4;
+            this.checkBox4.Text = "checkBox4";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // medecin
+            // monthCalendar1
             // 
-            this.medecin.Name = "medecin";
-            this.medecin.Size = new System.Drawing.Size(90, 20);
-            this.medecin.Text = "Les médecins";
-            this.medecin.Click += new System.EventHandler(this.medecin_Click);
+            this.monthCalendar1.Location = new System.Drawing.Point(159, 295);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 5;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // FormM2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.allRapport);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormM2";
             this.Text = "FormM2";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,10 +114,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem rapport;
-        private System.Windows.Forms.ToolStripMenuItem visiteur;
-        private System.Windows.Forms.ToolStripMenuItem medicament;
-        private System.Windows.Forms.ToolStripMenuItem medecin;
+        private System.Windows.Forms.CheckBox allRapport;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }

@@ -45,5 +45,15 @@ namespace Projet_GCB_XVB
             FormM2_Medecins form1 = new FormM2_Medecins();
             form1.Show();
         }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
     }
 }
