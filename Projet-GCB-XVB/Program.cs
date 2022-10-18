@@ -16,7 +16,11 @@ namespace Projet_GCB_XVB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMenu());
+            Modele.init();
+            Application.Run(new FModifieIN());
+            //Application.Run(new FInformationNominative());
+
+
         }
     }
 }

@@ -15,6 +15,13 @@ namespace Projet_GCB_XVB
         public FormM1()
         {
             InitializeComponent();
+    
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FVisiteur VI = new FVisiteur();
+            VI.Show();
         }
     }
 }
