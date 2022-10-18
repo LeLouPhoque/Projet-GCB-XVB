@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace Projet_GCB_XVB
 {
-    public partial class FormM3 : Form
+    public partial class FormM2_Rapport : Form
     {
-        public FormM3()
+        public FormM2_Rapport()
         {
             InitializeComponent();
         }
-
-
-
     }
 }

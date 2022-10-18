@@ -14,13 +14,10 @@ namespace Projet_GCB_XVB
         [STAThread]
         static void Main()
         {
+            Modele.init();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Modele.init();
-            Application.Run(new FModifieIN());
-            //Application.Run(new FInformationNominative());
-
-
+            Application.Run(new Connexion());
         }
     }
 }
