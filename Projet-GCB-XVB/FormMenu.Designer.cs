@@ -32,7 +32,6 @@
             this.btnMission2 = new System.Windows.Forms.Button();
             this.btnMission3 = new System.Windows.Forms.Button();
             this.btnNotExit = new System.Windows.Forms.Button();
-            this.btnNotExist = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMission1
@@ -67,36 +66,22 @@
             // 
             // btnNotExit
             // 
-            this.btnNotExit.BackColor = System.Drawing.Color.Red;
-            this.btnNotExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNotExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnNotExit.Location = new System.Drawing.Point(201, 302);
+            this.btnNotExit.BackColor = System.Drawing.Color.LightGray;
+            this.btnNotExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNotExit.Location = new System.Drawing.Point(695, 389);
             this.btnNotExit.Name = "btnNotExit";
-            this.btnNotExit.Size = new System.Drawing.Size(396, 77);
+            this.btnNotExit.Size = new System.Drawing.Size(80, 36);
             this.btnNotExit.TabIndex = 4;
             this.btnNotExit.Text = "Quitter";
             this.btnNotExit.UseVisualStyleBackColor = false;
             this.btnNotExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnNotExist
-            // 
-            this.btnNotExist.BackColor = System.Drawing.Color.Red;
-            this.btnNotExist.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNotExist.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnNotExist.Location = new System.Drawing.Point(201, 37);
-            this.btnNotExist.Name = "btnNotExist";
-            this.btnNotExist.Size = new System.Drawing.Size(396, 77);
-            this.btnNotExist.TabIndex = 5;
-            this.btnNotExist.Text = "Ne pas Quitter";
-            this.btnNotExist.UseVisualStyleBackColor = false;
-            this.btnNotExist.Click += new System.EventHandler(this.btnNotExist_Click);
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnNotExist);
             this.Controls.Add(this.btnNotExit);
             this.Controls.Add(this.btnMission3);
             this.Controls.Add(this.btnMission2);
@@ -113,6 +98,5 @@
         private System.Windows.Forms.Button btnMission2;
         private System.Windows.Forms.Button btnMission3;
         private System.Windows.Forms.Button btnNotExit;
-        private System.Windows.Forms.Button btnNotExist;
     }
 }
