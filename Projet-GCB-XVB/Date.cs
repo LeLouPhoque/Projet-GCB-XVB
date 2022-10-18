@@ -19,7 +19,7 @@ namespace Projet_GCB_XVB
 
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
-            cbMois.Enabled=false;
+            cbMois.SelectedIndex = -1;
 
         }
 
