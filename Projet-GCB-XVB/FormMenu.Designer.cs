@@ -67,11 +67,11 @@
             // btnNotExit
             // 
             this.btnNotExit.BackColor = System.Drawing.Color.LightGray;
-            this.btnNotExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnNotExit.Location = new System.Drawing.Point(695, 389);
+            this.btnNotExit.Location = new System.Drawing.Point(728, 422);
             this.btnNotExit.Name = "btnNotExit";
-            this.btnNotExit.Size = new System.Drawing.Size(80, 36);
+            this.btnNotExit.Size = new System.Drawing.Size(60, 26);
             this.btnNotExit.TabIndex = 4;
             this.btnNotExit.Text = "Quitter";
             this.btnNotExit.UseVisualStyleBackColor = false;

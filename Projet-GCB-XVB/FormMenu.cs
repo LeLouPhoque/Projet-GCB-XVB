@@ -44,7 +44,7 @@ namespace Projet_GCB_XVB
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();s
+            this.Close();
         }
     }
 }
