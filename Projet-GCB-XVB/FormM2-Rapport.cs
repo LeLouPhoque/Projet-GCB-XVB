@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Projet_GCB_XVB
 {
-    public partial class FormM1 : Form
+    public partial class FormM2_Rapport : Form
     {
-        public FormM1()
+        public FormM2_Rapport()
         {
             InitializeComponent();
-    
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FVisiteur VI = new FVisiteur();
-            VI.Show();
         }
     }
 }

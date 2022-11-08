@@ -19,6 +19,11 @@ namespace Projet_GCB_XVB
             maConnexion = new connectXVB();
         }
 
+         public static List<Visiteur> Listevisiteur()
+        {
+            return maConnexion.Visiteur.ToList();
+        }
+        
         public static string validConnexion(string id, string mp)
         {
             string message = "";
@@ -39,6 +44,5 @@ namespace Projet_GCB_XVB
                 }
             return message;
         }
-
     }
 }
