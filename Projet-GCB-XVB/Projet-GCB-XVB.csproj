@@ -76,23 +76,11 @@
     <Compile Include="fichefrais.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
-	<Compile Include="FormM2-Rapport.Designer.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="FInformationNominative.Designer.cs">
+    <Compile Include="FInformationNominative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInformationNominative.Designer.cs">
       <DependentUpon>FInformationNominative.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FModifieIN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FModifieIN.Designer.cs">
-      <DependentUpon>FModifieIN.cs</DependentUpon>
-	</Compile>
-    <Compile Include="FormM2-Rapport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormM2-Rapport.Designer.cs">
-      <DependentUpon>FormM2-Rapport.cs</DependentUpon>
     </Compile>
     <Compile Include="FormM2.cs">
       <SubType>Form</SubType>
@@ -121,12 +109,6 @@
     <Compile Include="FraisForfait.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
-    <Compile Include="FVisiteur.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FVisiteur.Designer.cs">
-      <DependentUpon>FVisiteur.cs</DependentUpon>
-    </Compile>
     <Compile Include="GSB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -141,11 +123,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GSB.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="GSB_XVBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GSB_XVBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Laboratoire.cs">
       <DependentUpon>GSB.tt</DependentUpon>
@@ -186,12 +163,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>GSB.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Connexion.resx">
-      <DependentUpon>Connexion.cs</DependentUpon>
+    <EmbeddedResource Include="FInformationNominative.resx">
+      <DependentUpon>FInformationNominative.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Date.resx">
-      <DependentUpon>Date.cs</DependentUpon>
-      </EmbeddedResource>
     <EmbeddedResource Include="FormM1.resx">
       <DependentUpon>FormM1.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FVisiteur.resx">
-      <DependentUpon>FVisiteur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -34,7 +34,7 @@ namespace Projet_GCB_XVB
 
         private void medecinToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormM2_Rapport form1 = new FormM2_Rapport();
+            FormM2 form1 = new FormM2();
             form1.Show();
         }
 
